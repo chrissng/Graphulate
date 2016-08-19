@@ -1,0 +1,342 @@
+{ "links" : [ 
+      { "rsDisplay" : "parent of",
+        "source" : 0,
+        "target" : 1
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 1,
+        "target" : 2
+      },
+      { "rsDisplay" : "married to",
+        "source" : 2,
+        "target" : 3
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 2,
+        "target" : 5
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 2,
+        "target" : 7
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 2,
+        "target" : 8
+      },
+      { "rsDisplay" : "married to",
+        "source" : 4,
+        "target" : 5
+      },
+      { "rsDisplay" : "married to",
+        "source" : 6,
+        "target" : 7
+      },
+      { "rsDisplay" : "married to",
+        "source" : 8,
+        "target" : 9
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 8,
+        "target" : 29
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 8,
+        "target" : 30
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 20
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 21
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 23
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 24
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 27
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 6,
+        "target" : 28
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 4,
+        "target" : 11
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 4,
+        "target" : 12
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 4,
+        "target" : 14
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 4,
+        "target" : 16
+      },
+      { "rsDisplay" : "parent of",
+        "source" : 4,
+        "target" : 17
+      },
+      { "rsDisplay" : "married to",
+        "source" : 10,
+        "target" : 11
+      },
+      { "rsDisplay" : "married to",
+        "source" : 13,
+        "target" : 14
+      },
+      { "rsDisplay" : "married to",
+        "source" : 15,
+        "target" : 16
+      },
+      { "rsDisplay" : "married to",
+        "source" : 17,
+        "target" : 18
+      },
+      { "rsDisplay" : "married to",
+        "source" : 19,
+        "target" : 20
+      },
+      { "rsDisplay" : "married to",
+        "source" : 21,
+        "target" : 22
+      },
+      { "rsDisplay" : "married to",
+        "source" : 24,
+        "target" : 25
+      },
+      { "rsDisplay" : "married to",
+        "source" : 26,
+        "target" : 27
+      }
+    ],
+  "nodes" : [ 
+      { "oid" : "0",
+        "generation" : "0",
+        "name" : "孙门张氏千娘 曾祖母",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "1",
+        "generation" : "1",
+        "name" : "孙文交 养父",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "2",
+        "generation" : "2",
+        "name" : "苏金莲 福建同安 养女",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "3",
+        "generation" : "2",
+        "name" : "陈金 福建永春",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "4",
+        "generation" : "3",
+        "name" : "郑秀玉",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "5",
+        "generation" : "3",
+        "name" : "陈清福",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "6",
+        "generation" : "3",
+        "name" : "郑葫芦",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "7",
+        "generation" : "3",
+        "name" : "孙朝枝",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "8",
+        "generation" : "3",
+        "name" : "孙玉凤 养女",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "9",
+        "generation" : "3",
+        "name" : "陈明强",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "10",
+        "generation" : "4",
+        "name" : "姚淑鸾",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "11",
+        "generation" : "4",
+        "name" : "陈华强",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "12",
+        "generation" : "4",
+        "name" : "陈淑娥",
+        "year" : "",
+        "gender" : "female",
+        "status" : "single"
+      },
+      { "oid" : "13",
+        "generation" : "4",
+        "name" : "陈少芬",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "14",
+        "generation" : "4",
+        "name" : "陈华山 阿安",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "15",
+        "generation" : "4",
+        "name" : "许雅秀",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "16",
+        "generation" : "4",
+        "name" : "陈华龙 阿刚",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "17",
+        "generation" : "4",
+        "name" : "陈淑心",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "18",
+        "generation" : "4",
+        "name" : "陈其谦",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "19",
+        "generation" : "4",
+        "name" : "李秀梅",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "20",
+        "generation" : "4",
+        "name" : "孙仁宝",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "21",
+        "generation" : "4",
+        "name" : "孙淑月",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "22",
+        "generation" : "4",
+        "name" : "吴文强",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "23",
+        "generation" : "4",
+        "name" : "孙淑珍",
+        "year" : "",
+        "gender" : "female",
+        "status" : "single"
+      },
+      { "oid" : "24",
+        "generation" : "4",
+        "name" : "孙美毬",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "25",
+        "generation" : "4",
+        "name" : "张裕民",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "26",
+        "generation" : "4",
+        "name" : "梁美凤",
+        "year" : "",
+        "gender" : "female",
+        "status" : "family"
+      },
+      { "oid" : "27",
+        "generation" : "4",
+        "name" : "孙仁才",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "28",
+        "generation" : "4",
+        "name" : "孙仁南",
+        "year" : "",
+        "gender" : "male",
+        "status" : "single"
+      },
+      { "oid" : "29",
+        "generation" : "4",
+        "name" : "陈坤山",
+        "year" : "",
+        "gender" : "male",
+        "status" : "single"
+      },
+      { "oid" : "30",
+        "generation" : "4",
+        "name" : "陈治豪",
+        "year" : "",
+        "gender" : "male",
+        "status" : "single"
+      }
+    ]
+}

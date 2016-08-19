@@ -1,0 +1,211 @@
+body {
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	position: fixed;
+	margin: 0px;
+}
+
+text.mPivotGraphIntroText {
+	text-shadow: #111 1px 1px 2px; 
+	text-anchor: middle; 
+	pointer-events: auto; 
+	font-size: x-large; 
+	fill: #282828;
+	cursor: pointer;
+}
+
+#mPivotGraphLogo {
+	padding-right: 5px;
+	animation: dropZonePulsate 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: running;
+	-webkit-animation: dropZonePulsate 2s; /* Safari and Chrome */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-play-state: running;
+
+	transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+}
+@keyframes dropZonePulsate
+{
+	0%   { opacity: 1.0; }
+	50%  { opacity: 0.85; }
+	100% { opacity: 1.0; }
+}
+@-webkit-keyframes dropZonePulsate /* Safari and Chrome */
+{
+	0%   { opacity: 1.0; }
+	50%  { opacity: 0.85; }
+	100% { opacity: 1.0; }
+}
+
+#mPivotGraphSVG {
+	width: 100%;
+	height: 100%;
+}
+
+.mPivotGraphDataDropZone {
+	opacity: 1.0;
+
+	transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-webkit-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: box-shadow .2s ease-in-out;
+	-moz-transition: box-shadow .2s ease-in-out;
+	-webkit-transition: box-shadow .2s ease-in-out;
+	-o-transition: box-shadow .2s ease-in-out;
+}
+.mPivotGraphDataDropZone.dropping {
+	opacity: 0.2;
+	box-shadow: inset 0px -15px 50px 50px #111;
+}
+
+div#mPivotGraphDIV {
+	width: 100%;
+	height: 100%;
+}
+
+div#mPivotGraphDIV #pgControls {
+	font-size: 12px;
+}
+
+div#mPivotGraphDIV #pgControls select {
+	display: inline-block;
+	border: 1px solid #1E1E1E;
+	padding: 4px 3px 3px 5px;
+	margin: 0;
+	font: inherit;
+	outline: none;
+	background-color: #000;
+	-webkit-appearance: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 25px;
+	color: white;
+}
+div#mPivotGraphDIV #pgControls select:hover, 
+div#mPivotGraphDIV #pgControls select#pivot_x_axis:hover,
+div#mPivotGraphDIV #pgControls select#pivot_y_axis:hover,
+div#mPivotGraphDIV #pgControls select#search_yourself:hover {
+	background-color: #282828;
+    cursor: pointer;
+}
+
+/* for Webkit's CSS-only solution */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    div#mPivotGraphDIV #pgControls select {
+        padding-right:30px;
+        background: url("../img/drop_down_arrow.png") no-repeat right #000;
+        background-size: contain;
+    }
+    div#mPivotGraphDIV #pgControls select#pivot_x_axis {
+        padding-right:30px;
+        background: url("../img/drop_down_arrow_x.png") no-repeat right #000;
+        background-size: contain;
+    }
+    div#mPivotGraphDIV #pgControls select#pivot_y_axis {
+        padding-right:30px;
+        background: url("../img/drop_down_arrow_y.png") no-repeat right #000;
+        background-size: contain;
+    }
+    div#mPivotGraphDIV #pgControls select#search_yourself {
+        padding-right:30px;
+        background: url("../img/drop_down_arrow_id.png") no-repeat right #000;
+        background-size: contain;
+    }
+}
+
+
+div#mPivotGraphDIV #pgControls input#pgReverseAxleBtn {
+    display: none;
+}
+div#mPivotGraphDIV #pgControls label#vpgReverseAxleBtnLbl {
+	height: 23px;
+	border: 1px solid #1E1E1E;
+	border-radius: 3px;
+	background-color: #000;
+	background-image: url("../img/reverse_arrow.png");
+	color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 40px;
+	vertical-align: top;
+	display: inline-block;
+}
+div#mPivotGraphDIV #pgControls label#vpgReverseAxleBtnLbl:hover, div#mPivotGraphDIV #pgControls label#vpgReverseAxleBtnLbl:active {
+    background-color: #282828;
+    cursor: pointer;
+}
+div#mPivotGraphDIV #pgControls input#pgReverseAxleBtn:checked + label#vpgReverseAxleBtnLbl {
+	background-image: url("../img/reverse_arrow_b.png");
+}
+
+div#mPivotGraphDIV #pgControls * {
+    transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+}
+
+
+/*
+input[type=range], ::-moz-range-track, ::-ms-track {
+	-webkit-appearance: none !important;
+	background-color: #000;
+	width: 50px;
+	height: 12px;
+}
+
+input[type='range']::-webkit-slider-thumb, ::-moz-range-thumb, ::-ms-thumb {
+	-webkit-appearance: none !important;
+	background-color: #1E1E1E;
+	width: 10px;
+	height: 10px;
+}*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #282828;
+	width: 100px;
+	height: 3px;
+	padding: 0px 3px 0px 3px;
+	position: relative;
+	right: 0px;
+	top: -4px;
+}
+input[type=range]:focus {
+	outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #282828;
+	border: 1px solid #1E1E1E;
+	border-radius: 3px;
+	width: 10px;
+	height: 20px;
+
+	transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+	background-color: #282828;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+	background-color: #282828;
+    cursor: pointer;
+}

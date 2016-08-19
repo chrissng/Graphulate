@@ -1,0 +1,23 @@
+{ "links" : [ 
+      { "rsDisplay" : "parent of",
+        "source" : 0,
+        "target" : 1
+      }
+    ],
+  "nodes" : [ 
+      { "oid" : "0",
+        "generation" : "0",
+        "name" : "孙门张氏千娘 曾祖母",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      },
+      { "oid" : "1",
+        "generation" : "1",
+        "name" : "孙文交 养父",
+        "year" : "",
+        "gender" : "male",
+        "status" : "family"
+      }
+    ]
+}

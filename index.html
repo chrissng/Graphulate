@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+			<title>Graphulate</title>
+			<link type="text/css" rel="stylesheet" href="css/pivotgraph.css"/>
+			<link rel="icon" type="image/png" href="img/favicon.png" />
+	</head>
+	<body>
+		<script>
+			(function() {
+				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))
+					alert("Best viewed on the computer.\n在电脑上观看最佳。");
+			})();
+		</script>
+		<div id="mPivotGraphDIV">
+			<div style="height:35px; background-color:#111; border-bottom:1px solid #1e1e1e;">
+				<div style="position:absolute; float:left; padding: 8px;">
+					<img id="mPivotGraphLogo" src="img/logo.png" title="Graphulate is a tool to visualize complex graph structures using the PivotGraph technique.&#10;Drop a dataset anywhere and start discovering insights!"/>
+			    	<span id="mPivotGraphTitle" style='font-size:12pt; position:relative; top:-8px;'></span>
+				</div>
+			    <div id="pgControls" style="text-align:center; padding:5px; float:right; opacity:0.0;">
+			    	<span style='padding-right:20px;'>
+				    	<select class="pivot_axis" id="pivot_x_axis"></select>
+			    		<input type="checkbox" id="pgReverseAxleBtn" value="REVERSE_AXES" onchange="reversePivotGraphAxle()">
+			    			<label for="pgReverseAxleBtn" id="vpgReverseAxleBtnLbl" title="Reverse axes"></label>
+			    		<select class="pivot_axis" id="pivot_y_axis"></select>
+			    		</span>
+		    		<span style='padding-right:20px;'>
+		    			<select class="pivot_axis" id="search_yourself"></select>
+		    		</span>
+					<span>
+						<input type="range" id="size_node" name="size_node" min="5" max="100" step="0.1" value="40">
+					</span>
+		    	</div>
+			</div>
+			<svg class="mPivotGraphDataDropZone" id="mPivotGraphSVG">
+				<a xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/mbostock/d3/wiki/Force-Layout#wiki-nodes" target="_blank">
+					<text class='mPivotGraphIntroText' x="50%" y="48.5%">
+						drop a dataset anywhere and start discovering
+					</text>
+				</a>
+				<text id='mPivotGraphSVGSampleDataset' class='mPivotGraphIntroText' x="50%" y="51.5%" style='font-size:larger; font-style:italic;'>
+					sample dataset
+				</text>
+			</svg>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.2/d3.min.js"></script>
+			<script src="js/lib/PivotGraph.js"></script>
+			<script src="js/main.js"></script>
+			<script>
+				(function() { d3.select("#mPivotGraphSVGSampleDataset").on("click", function(d) { loadSample(); }); })();
+				initPivotGraph("mPivotGraphDIV", "mPivotGraphSVG", "-1");
+			</script>
+		</div>
+	</body>
+</html>
+
+<!-- aaf5cd79-d16d-4ba2-b059-ab62fcf8248e -->
